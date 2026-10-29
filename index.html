@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow"><title>Pre-Academy · Aprobación</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f3f2ef;--panel:#fff;--ink:#121212;--ink2:#45454a;--muted:#75757b;--line:#e1dfd9;--acento:#8c6a12;--marca:#c9a227;--ok:#1d7a4a;--ok-s:#e3f3ea;--warn:#946300;--warn-s:#fbf0d4;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0e0e;--panel:#191919;--ink:#f3f2ec;--ink2:#c8c7c0;--muted:#8e8d87;--line:#2d2d2d;--acento:#d9b54a;--ok:#5cc98c;--ok-s:#14301f;--warn:#e7b84a;--warn-s:#352a10;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e0e0e;--panel:#191919;--ink:#f3f2ec;--ink2:#c8c7c0;--muted:#8e8d87;--line:#2d2d2d;--acento:#d9b54a;--ok:#5cc98c;--ok-s:#14301f;--warn:#e7b84a;--warn-s:#352a10;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Barlow",system-ui,"Segoe UI",sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:18px;padding-block:26px 60px}
+h1,h2,h3{font-family:"Barlow Condensed","Barlow",system-ui,sans-serif;margin:0;line-height:1.1;text-wrap:balance}
+h1{font-size:clamp(30px,5vw,46px);text-transform:uppercase}h3{font-size:20px;letter-spacing:.4px}
+.franja{height:6px;background:var(--marca);border-radius:3px;width:64px;margin-bottom:14px}
+.eyebrow{font:600 13px/1 "Barlow",sans-serif;letter-spacing:2.5px;text-transform:uppercase;color:var(--acento);margin-bottom:10px}
+.lead{color:var(--ink2);font-size:18px;margin:10px 0 0;max-width:72ch}
+.como{margin-top:14px;font-size:15px;color:var(--ink2);max-width:80ch}
+.como ul{margin:6px 0 0;padding-left:20px}
+.segm{padding:14px 16px}
+.segm dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 18px;margin:0}.segm dt{font-weight:600}.segm dd{margin:0;color:var(--ink2)}
+@media (max-width:560px){.segm dl{grid-template-columns:1fr;gap:2px}.segm dd{margin-bottom:8px}}
+.todo{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:16px 0 0;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.todo .cuenta{font-weight:600}
+.ad{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-top:16px;overflow:hidden}
+.ad.conf{border-top:4px solid var(--marca)}
+.ad header{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.num{font:700 16px "Barlow Condensed",sans-serif;background:var(--ink);color:var(--bg);width:26px;height:26px;border-radius:50%;display:grid;place-items:center;flex:none}
+.estado{margin-left:auto;font-size:13px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--warn-s);color:var(--warn);white-space:nowrap}
+.cuerpo{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:22px;padding:16px}
+.media{min-width:0}.media img{display:block;width:100%;height:auto;border-radius:8px}
+.donde{font:600 12px "Barlow",sans-serif;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.media img{max-width:380px}.media img.prev{max-width:340px;border-radius:14px;box-shadow:0 2px 14px rgba(0,0,0,.14);background:#fff}
+.ver{margin-top:10px}.ver summary{cursor:pointer;color:var(--acento);font-weight:600;font-size:14px}.ver .vid{margin-top:8px}
+.vid{display:block;width:100%;max-width:330px;aspect-ratio:9/16;height:auto;border-radius:8px;background:#000}
+.dl{display:inline-block;margin-top:8px;font-size:14px;color:var(--acento);font-weight:600}
+.nota-pieza{font-size:14px;color:var(--muted);margin:6px 0 0}
+.copy{min-width:0}.lbl{font:600 12px "Barlow",sans-serif;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin-top:14px}
+.lbl:first-child{margin-top:0}.hint{text-transform:none;letter-spacing:0;font-weight:400}
+.tp{font-size:15.5px}.tit{font-weight:600}
+.btn{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:3px 12px;font-weight:600;font-size:14px;margin:4px 0 0}
+.trad{margin-top:14px;font-size:14.5px;color:var(--ink2)}.trad summary{cursor:pointer;color:var(--acento);font-weight:600}.trad p{margin:8px 0 0}
+.ed{border:1px dashed var(--line);border-radius:8px;padding:8px 10px;margin-top:4px;outline:none;white-space:pre-wrap}
+.ed:focus{border-color:var(--acento);border-style:solid}.ed.cambiado{border-color:var(--warn);border-style:solid}
+.acciones{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.acciones button,.nota button,.todo button{font:600 15px "Barlow",sans-serif;border-radius:8px;padding:9px 16px;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.acciones button:focus-visible,.todo button:focus-visible,.nota button:focus-visible,.trad summary:focus-visible{outline:2px solid var(--acento);outline-offset:2px}
+.acciones .aprobar,.todo button{background:var(--ok);border-color:var(--ok);color:#fff}.acciones .aprobar.copy{background:var(--warn);border-color:var(--warn)}
+.nota[hidden],.deshacer[hidden],.todo button[hidden]{display:none}
+.nota{margin-top:10px;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.nota textarea{font:15px "Barlow",sans-serif;padding:8px 10px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);width:100%}
+.aviso{margin:8px 0 0;font-size:14px;color:var(--ok);min-height:1em}
+.ad.aprobado{border-color:var(--ok);box-shadow:0 0 0 1px var(--ok)}.ad.aprobado .estado{background:var(--ok-s);color:var(--ok)}
+@media (max-width:720px){.cuerpo{grid-template-columns:1fr}.media img{max-width:440px}}
+footer{margin-top:40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:14px}
+.lp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.lp figure{margin:0;min-width:0}.lp figure.pc{grid-column:1/-1}
+.lp img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}.lp figure.pc img{max-width:760px}
+.lp figcaption{font-size:13.5px;color:var(--muted);margin-top:6px}
+@media (max-width:640px){.lp{grid-template-columns:1fr 1fr}}
+.estructura{margin-top:22px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.estructura h2{font-size:24px;margin-bottom:12px}
+.arbol{display:grid;gap:8px}
+.nivel{display:grid;grid-template-columns:96px 1fr;column-gap:12px;row-gap:2px;align-items:baseline;border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-width:0}
+.nivel .et{grid-row:span 2;font:600 12px "Barlow",sans-serif;letter-spacing:1.4px;text-transform:uppercase;color:var(--acento)}
+.nivel b{overflow-wrap:anywhere}.nivel span:not(.et){color:var(--ink2);font-size:14.5px}
+.nivel.conj{margin-left:18px}.anuncios{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-left:36px}
+.anuncios .nivel{grid-template-columns:1fr}.anuncios .nivel .et{grid-row:auto}
+.nivel.dest{margin-left:36px;border-style:dashed}
+@media (max-width:720px){.anuncios{grid-template-columns:1fr;margin-left:18px}.nivel.dest{margin-left:18px}.nivel.conj{margin-left:9px}.nivel{grid-template-columns:1fr}.nivel .et{grid-row:auto}}
+
+.landing{margin-top:18px;padding:16px 18px;border-radius:14px;background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--marca);display:grid;gap:10px}
+.landing p{margin:0;color:var(--ink2)}
+.landing .ir{justify-self:start;display:inline-block;background:var(--ink);color:var(--bg);text-decoration:none;font:700 17px "Barlow",sans-serif;padding:12px 18px;border-radius:10px}
+.landing .ir:focus-visible{outline:2px solid var(--acento);outline-offset:2px}
+.landing .sedes a{color:var(--acento);font-weight:600}.hint2{font-size:14px}
+.tabla{overflow-x:auto;margin-top:16px}.tabla table{border-collapse:collapse;width:100%;min-width:520px;font-size:15px}
+.tabla th,.tabla td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}.tabla th{font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.tabla td:nth-child(2){font-variant-numeric:tabular-nums;white-space:nowrap}.tabla a{color:var(--acento)}.tabla .tot td{font-weight:700}
+.antes{background:var(--warn-s);border-radius:10px;padding:10px 14px}
+code{font-size:13px;word-break:break-all}
+img.zoom{cursor:zoom-in}
+#lb{position:fixed;inset:0;z-index:1000;background:rgba(10,10,12,.92);display:flex;align-items:center;justify-content:center;overflow:auto;padding:max(16px,env(safe-area-inset-top)) 16px 16px}
+#lb[hidden]{display:none}
+#lb img{max-width:min(100%,1080px);max-height:calc(100vh - 32px);width:auto;height:auto;border-radius:6px;box-shadow:0 20px 60px rgba(0,0,0,.6);cursor:zoom-in}
+#lb.real{align-items:flex-start;justify-content:flex-start}
+#lb.real img{max-width:none;max-height:none;width:1080px;cursor:zoom-out;margin:auto}
+#lb .x{position:fixed;top:max(12px,env(safe-area-inset-top));right:14px;width:44px;height:44px;border-radius:50%;border:0;background:#fff;color:#111;font:600 24px/44px system-ui;cursor:pointer;z-index:2}
+#lb .ay{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);color:#ddd;font:500 13px/1.3 system-ui;background:rgba(0,0,0,.5);padding:6px 12px;border-radius:20px;pointer-events:none}
+body.lb-abierto{overflow:hidden}</style></head><body><div class="wrap">
+<div class="franja"></div>
+<div class="eyebrow">Juventus Academy Miami · Meta Ads · Pre-Academy · 29-10</div>
+<h1>Campaña de Pre-Academy con inscripción en línea</h1>
+<p class="lead">La campaña de Pre-Academy cambia de destino: en vez de llevar a WhatsApp, cada anuncio lleva a la página de su sede y de ahí a la inscripción en PlayMetrics. Aquí están el objetivo, el presupuesto por sede y los cuatro anuncios con sus textos. Todavía no hay nada montado en Meta: se monta en borrador cuando todo esté aprobado.</p>
+<div class="landing">
+  <div><div class="eyebrow">Página de destino de los anuncios</div>
+  <p><b>Antes o mientras se revisan las piezas, se puede abrir la página a la que llegan los padres</b> (cada anuncio abre la de su sede):</p></div>
+  <a class="ir" href="https://almacenamiento982-blip.github.io/jam-landing-preacademy/" target="_blank" rel="noopener">Abrir la página de Pre-Academy ↗</a>
+  <p class="sedes">Por sede: <a href="https://almacenamiento982-blip.github.io/jam-landing-preacademy/?sede=downtown" target="_blank" rel="noopener">Downtown Miami</a> · <a href="https://almacenamiento982-blip.github.io/jam-landing-preacademy/?sede=doral" target="_blank" rel="noopener">Doral</a> · <a href="https://almacenamiento982-blip.github.io/jam-landing-preacademy/?sede=davie" target="_blank" rel="noopener">Davie</a> · <a href="https://almacenamiento982-blip.github.io/jam-landing-preacademy/?sede=miramar" target="_blank" rel="noopener">Miramar</a> · <a href="https://almacenamiento982-blip.github.io/jam-landing-preacademy/?sede=materbay" target="_blank" rel="noopener">Mater Bay</a></p>
+  <p class="hint2">Copia de revisión (la misma que se aprobó con el cambio del 29-10: "1,300+ players in Pre-Academy in the past years"). La versión pública quedará en <b>https://jacademymiami.com/pre-academy/</b>.</p>
+</div>
+<div class="como"><b>Qué cambió en los anuncios:</b>
+  <ul>
+    <li>Son los cuatro anuncios con mejor resultado de la campaña actual, con el botón de la pieza cambiado de "Message us on WhatsApp" a <b>"Sign up online"</b>; el botón de Meta será <b>"Sign up"</b>.</li>
+    <li>Textos nuevos, sin WhatsApp, con la llamada a la inscripción dentro del texto, en inglés y español.</li>
+    <li>El mes gratis solo aparece en los anuncios de Miramar, Mater Bay y Downtown Miami; Doral y Davie llevan el anuncio de las 5 sedes.</li>
+    <li>Los reels no entran por ahora: el de la voz de Jesús termina con "Send us a message".</li>
+  </ul></div>
+<div class="como antes"><b>Qué falta para poder encenderla</b> (no depende de esta aprobación):
+  <ul>
+    <li>El píxel de Meta de jacademymiami.com en el portafolio de la cuenta nueva, instalado en la web con el evento Lead del botón "Register". Hoy la web no tiene píxel de Meta.</li>
+    <li>El método de pago de la cuenta publicitaria nueva.</li>
+    <li>El acceso de la cuenta nueva a la página de Facebook y al Instagram de Juventus Academy Miami.</li>
+  </ul></div>
+<p class="como"><b>Cómo aprobar:</b> si está bien, botón <b>Aprobar</b>. Para corregir un texto, un título o una descripción, se escribe directamente encima; el botón pasa a <b>Aprobar con texto corregido</b> y se guarda la versión nueva. También se puede dejar una nota sin aprobar.</p>
+<div class="todo"><span class="cuenta"></span><button type="button">Aprobar todo lo que falta</button></div>
+<article class="ad pend conf" data-id="CONF">
+  <header><span class="num">$</span><h3>Campaña propuesta: objetivo, presupuesto y públicos</h3><span class="estado" data-estado>Por aprobar</span></header>
+  <div class="segm">
+    <dl>
+      <dt>Objetivo</dt><dd><b>Inscripciones a Pre-Academy.</b> Campaña de <b>Ventas</b> optimizada al evento <b>Lead</b>: Meta lo cuenta cuando el padre toca "Register" en la página de su sede, que abre el formulario de PlayMetrics (programa Pre-Academy &amp; Piccolo 2026/27). Ya no va a WhatsApp; la burbuja de WhatsApp queda solo para dudas.</dd>
+      <dt>Cuenta</dt><dd>Se estrena la cuenta publicitaria nueva <b>Juventus Academy Miami – Ads</b>, con la página Juventus Academy Miami y el Instagram @juventusacademymiami.</dd>
+      <dt>Presupuesto</dt><dd><b>USD 33 al día</b> (unos USD 990 al mes), <b>el mismo de la campaña actual de WhatsApp</b>, repartido por sede (tabla). Por confirmar.</dd>
+      <dt>Públicos</dt><dd>Un conjunto por sede: padres de <b>28 a 50 años</b> alrededor de cada sede (radio de la tabla), sin que Meta amplíe el público por su cuenta. Cada conjunto lleva a la página de su sede, con el titular, el horario y el botón de esa sede.</dd>
+      <dt>Idioma</dt><dd>Cada anuncio va en inglés con el español agregado como segundo idioma: Meta muestra a cada persona la versión de su idioma.</dd>
+      <dt>Dónde sale</dt><dd>Ubicaciones automáticas de Meta (sobre todo Instagram y Facebook: feed, Stories y Reels).</dd>
+      <dt>Medición</dt><dd>Lead en Meta al tocar "Register"; UTM en cada enlace (<code>utm_source=meta&amp;utm_medium=paid&amp;utm_campaign=preacademy_landing_nov26&amp;utm_content={{ad.name}}</code>) que pasan hasta PlayMetrics; y las inscripciones reales del programa en PlayMetrics, que son el indicador que manda.</dd>
+      <dt>Evaluación</dt><dd>Primera revisión a los 7 días de encendida. No se pausa nada antes de 7 días, ni con menos de 20 resultados, y los cambios se hacen de a uno. Se mira cada conjunto completo, no el anuncio suelto.</dd>
+      <dt>WhatsApp actual</dt><dd>La campaña de WhatsApp (cuenta anterior) sigue corriendo hasta que la nueva empiece a entregar. Se propone apagarla ese mismo día, para no duplicar el gasto.</dd>
+    </dl>
+    <div class="tabla"><table><thead><tr><th>Sede</th><th>Al día</th><th>Radio</th><th>Anuncios</th><th>Página</th></tr></thead><tbody><tr><td>Downtown Miami</td><td>USD 7</td><td>5 millas</td><td>Con mes gratis: AD5, AD3, AD4 y AD1</td><td><a href="https://almacenamiento982-blip.github.io/jam-landing-preacademy/?sede=downtown" target="_blank" rel="noopener">?sede=downtown</a></td></tr><tr><td>Doral</td><td>USD 8</td><td>6 millas</td><td>Sin mes gratis: AD1</td><td><a href="https://almacenamiento982-blip.github.io/jam-landing-preacademy/?sede=doral" target="_blank" rel="noopener">?sede=doral</a></td></tr><tr><td>Davie</td><td>USD 6</td><td>8 millas</td><td>Sin mes gratis: AD1</td><td><a href="https://almacenamiento982-blip.github.io/jam-landing-preacademy/?sede=davie" target="_blank" rel="noopener">?sede=davie</a></td></tr><tr><td>Miramar</td><td>USD 6</td><td>7 millas</td><td>Con mes gratis: AD5, AD3, AD4 y AD1</td><td><a href="https://almacenamiento982-blip.github.io/jam-landing-preacademy/?sede=miramar" target="_blank" rel="noopener">?sede=miramar</a></td></tr><tr><td>Mater Bay (Cutler Bay)</td><td>USD 6</td><td>7 millas</td><td>Con mes gratis: AD5, AD3, AD4 y AD1</td><td><a href="https://almacenamiento982-blip.github.io/jam-landing-preacademy/?sede=materbay" target="_blank" rel="noopener">?sede=materbay</a></td></tr>
+      <tr class="tot"><td>Total</td><td>USD 33</td><td colspan="3">≈ USD 990 al mes</td></tr></tbody></table></div>
+    <div class="acciones">
+      <button type="button" class="aprobar" data-accion="aprobar">Aprobar objetivo, presupuesto y públicos</button>
+      <button type="button" class="sec" data-accion="nota">Dejar una nota</button>
+    </div>
+    <div class="nota" hidden><textarea rows="2" placeholder="Nota sobre el presupuesto o los públicos (opcional)"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+    <p class="aviso" data-aviso aria-live="polite"></p>
+  </div>
+</article><article class="ad pend" data-id="AD5">
+  <header><span class="num">1</span><h3>AD5 · &quot;First month free&quot; (niño en acción, skyline)</h3><span class="estado" data-estado>Por aprobar</span></header>
+  <div class="cuerpo">
+    <div class="media"><p class="donde">Pieza · 1080 × 1350</p><img class="zoom" src="assets/AD5.jpg?v=1" data-full="assets/AD5_1080.jpg?v=1" alt="AD5 · &quot;First month free&quot; (niño en acción, skyline)" loading="lazy" title="Clic para ampliar"><a class="dl" href="assets/AD5_1080.jpg?v=1" target="_blank" rel="noopener">Ver la pieza a tamaño real</a>
+      <p class="nota-pieza"><b>Dónde sale:</b> Solo en Miramar, Mater Bay y Downtown Miami (las sedes con mes gratis).</p>
+      <p class="nota-pieza">Es el AD5 de la campaña actual (USD 3,42 por conversación, 86 conversaciones al 27-10). Solo cambió el botón de la pieza: &quot;Message us on WhatsApp&quot; → &quot;Sign up online&quot;. Mantiene las 5 sedes y la aclaración del mes gratis.</p></div>
+    <div class="copy">
+      <div class="lbl">Texto principal · inglés <span class="hint">· se puede editar</span></div>
+      <div class="tp ed" contenteditable="true" spellcheck="true" data-campo="texto">Still figuring out if he loves the game? Let him try it with Juventus. ⚽<br><br>At Miramar, Mater Bay and Downtown Miami, your first month of Juventus Pre-Academy is free: boys and girls learn soccer the Juventus way, with certified coaches and a real team.<br><br>Pick your location, see the schedule and sign up online at the link 👇</div>
+      <div class="lbl">Texto principal · español <span class="hint">· se agrega como segundo idioma del mismo anuncio · se puede editar</span></div>
+      <div class="tp ed" contenteditable="true" spellcheck="true" data-campo="texto_es">¿Todavía no sabes si le encanta el fútbol? Que lo pruebe con Juventus. ⚽<br><br>En Miramar, Mater Bay y Downtown Miami el primer mes de Juventus Pre-Academy es gratis: niños y niñas aprenden fútbol al estilo Juventus, con entrenadores certificados y un equipo de verdad.<br><br>Elige tu sede, mira el horario e inscríbelo en línea en el enlace 👇</div>
+      <div class="lbl">Título <span class="hint">· se puede editar</span></div>
+      <div class="tit ed" contenteditable="true" spellcheck="true" data-campo="titulo">First month free · Juventus Pre-Academy</div>
+      <div class="lbl">Descripción <span class="hint">· se puede editar</span></div>
+      <div class="tit ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Miramar · Mater Bay · Downtown Miami</div>
+      <div class="lbl">Botón de Meta</div><p class="btn">Sign up</p>
+      <div class="acciones">
+        <button type="button" class="aprobar" data-accion="aprobar">Aprobar</button>
+        <button type="button" class="sec" data-accion="nota">Dejar una nota</button>
+        <button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button>
+      </div>
+      <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio (opcional)"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+      <p class="aviso" data-aviso aria-live="polite"></p>
+    </div>
+  </div>
+</article><article class="ad pend" data-id="AD3">
+  <header><span class="num">2</span><h3>AD3 · &quot;Still figuring out if he loves the game?&quot;</h3><span class="estado" data-estado>Por aprobar</span></header>
+  <div class="cuerpo">
+    <div class="media"><p class="donde">Pieza · 1080 × 1350</p><img class="zoom" src="assets/AD3.jpg?v=1" data-full="assets/AD3_1080.jpg?v=1" alt="AD3 · &quot;Still figuring out if he loves the game?&quot;" loading="lazy" title="Clic para ampliar"><a class="dl" href="assets/AD3_1080.jpg?v=1" target="_blank" rel="noopener">Ver la pieza a tamaño real</a>
+      <p class="nota-pieza"><b>Dónde sale:</b> Solo en Miramar, Mater Bay y Downtown Miami (la pieza habla del mes gratis).</p>
+      <p class="nota-pieza">Es el que más conversaciones trajo en la campaña actual (94 a USD 3,87). Solo cambió el botón: &quot;Message us on WhatsApp&quot; → &quot;Sign up online&quot;. Ojo: los niños llevan petos de entrenamiento, no la camiseta de Juventus; se deja a decisión si sigue (si no, sale de la campaña y quedan los otros tres).</p></div>
+    <div class="copy">
+      <div class="lbl">Texto principal · inglés <span class="hint">· se puede editar</span></div>
+      <div class="tp ed" contenteditable="true" spellcheck="true" data-campo="texto">Still figuring out if he loves the game? That&#x27;s exactly who we built Juventus Pre-Academy for. 🦓<br><br>No pressure, no tryouts: boys and girls learn the game at their own pace with certified coaches and the Juventus methodology. First month free at Miramar, Mater Bay and Downtown Miami.<br><br>See the schedule and sign up online at the link 👇</div>
+      <div class="lbl">Texto principal · español <span class="hint">· se agrega como segundo idioma del mismo anuncio · se puede editar</span></div>
+      <div class="tp ed" contenteditable="true" spellcheck="true" data-campo="texto_es">¿Todavía no sabes si le encanta el fútbol? Justo para eso creamos Juventus Pre-Academy. 🦓<br><br>Sin presión y sin pruebas: niños y niñas aprenden a su ritmo con entrenadores certificados y la metodología Juventus. Primer mes gratis en Miramar, Mater Bay y Downtown Miami.<br><br>Mira el horario e inscríbelo en línea en el enlace 👇</div>
+      <div class="lbl">Título <span class="hint">· se puede editar</span></div>
+      <div class="tit ed" contenteditable="true" spellcheck="true" data-campo="titulo">Juventus Pre-Academy · Ages 3–16</div>
+      <div class="lbl">Descripción <span class="hint">· se puede editar</span></div>
+      <div class="tit ed" contenteditable="true" spellcheck="true" data-campo="descripcion">First month free at 3 locations</div>
+      <div class="lbl">Botón de Meta</div><p class="btn">Sign up</p>
+      <div class="acciones">
+        <button type="button" class="aprobar" data-accion="aprobar">Aprobar</button>
+        <button type="button" class="sec" data-accion="nota">Dejar una nota</button>
+        <button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button>
+      </div>
+      <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio (opcional)"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+      <p class="aviso" data-aviso aria-live="polite"></p>
+    </div>
+  </div>
+</article><article class="ad pend" data-id="AD1">
+  <header><span class="num">3</span><h3>AD1 · &quot;More soccer. More smiles.&quot; (5 sedes)</h3><span class="estado" data-estado>Por aprobar</span></header>
+  <div class="cuerpo">
+    <div class="media"><p class="donde">Pieza · 1080 × 1350</p><img class="zoom" src="assets/AD1.jpg?v=1" data-full="assets/AD1_1080.jpg?v=1" alt="AD1 · &quot;More soccer. More smiles.&quot; (5 sedes)" loading="lazy" title="Clic para ampliar"><a class="dl" href="assets/AD1_1080.jpg?v=1" target="_blank" rel="noopener">Ver la pieza a tamaño real</a>
+      <p class="nota-pieza"><b>Dónde sale:</b> En las 5 sedes (es la pieza para Doral y Davie, que no tienen mes gratis).</p>
+      <p class="nota-pieza">Es el AD1 de la campaña actual (USD 3,33 por conversación, 24 conversaciones). Solo cambió el botón: &quot;Message us on WhatsApp&quot; → &quot;Sign up online&quot;. Lista las 5 sedes y no menciona el mes gratis.</p></div>
+    <div class="copy">
+      <div class="lbl">Texto principal · inglés <span class="hint">· se puede editar</span></div>
+      <div class="tp ed" contenteditable="true" spellcheck="true" data-campo="texto">More soccer. More smiles. Where the Juventus journey begins. ⚪⚫<br><br>Juventus Pre-Academy is for boys and girls ages 3 to 16 in Downtown Miami, Doral, Davie, Miramar and Mater Bay: weekly training with certified coaches, the Juventus methodology and a team to belong to.<br><br>Choose your location and sign up online at the link 👇</div>
+      <div class="lbl">Texto principal · español <span class="hint">· se agrega como segundo idioma del mismo anuncio · se puede editar</span></div>
+      <div class="tp ed" contenteditable="true" spellcheck="true" data-campo="texto_es">Más fútbol. Más sonrisas. Aquí empieza el camino Juventus. ⚪⚫<br><br>Juventus Pre-Academy es para niños y niñas de 3 a 16 años en Downtown Miami, Doral, Davie, Miramar y Mater Bay: entrenamientos cada semana con entrenadores certificados, la metodología Juventus y un equipo al que pertenecer.<br><br>Elige tu sede e inscríbelo en línea en el enlace 👇</div>
+      <div class="lbl">Título <span class="hint">· se puede editar</span></div>
+      <div class="tit ed" contenteditable="true" spellcheck="true" data-campo="titulo">Juventus Pre-Academy · 5 locations</div>
+      <div class="lbl">Descripción <span class="hint">· se puede editar</span></div>
+      <div class="tit ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Downtown · Doral · Davie · Miramar · Mater Bay</div>
+      <div class="lbl">Botón de Meta</div><p class="btn">Sign up</p>
+      <div class="acciones">
+        <button type="button" class="aprobar" data-accion="aprobar">Aprobar</button>
+        <button type="button" class="sec" data-accion="nota">Dejar una nota</button>
+        <button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button>
+      </div>
+      <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio (opcional)"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+      <p class="aviso" data-aviso aria-live="polite"></p>
+    </div>
+  </div>
+</article><article class="ad pend" data-id="AD4">
+  <header><span class="num">4</span><h3>AD4 · &quot;Your first month at Juventus is free&quot; (trofeo)</h3><span class="estado" data-estado>Por aprobar</span></header>
+  <div class="cuerpo">
+    <div class="media"><p class="donde">Pieza · 1080 × 1350</p><img class="zoom" src="assets/AD4.jpg?v=1" data-full="assets/AD4_1080.jpg?v=1" alt="AD4 · &quot;Your first month at Juventus is free&quot; (trofeo)" loading="lazy" title="Clic para ampliar"><a class="dl" href="assets/AD4_1080.jpg?v=1" target="_blank" rel="noopener">Ver la pieza a tamaño real</a>
+      <p class="nota-pieza"><b>Dónde sale:</b> Solo en Miramar, Mater Bay y Downtown Miami.</p>
+      <p class="nota-pieza">Es el AD4 de la campaña actual (77 conversaciones a USD 4,83). La pieza no cambia: su botón ya decía &quot;Claim your free month&quot;.</p></div>
+    <div class="copy">
+      <div class="lbl">Texto principal · inglés <span class="hint">· se puede editar</span></div>
+      <div class="tp ed" contenteditable="true" spellcheck="true" data-campo="texto">Your first month at Juventus is free. 🏆<br><br>Try the full Juventus Pre-Academy program before you commit to anything: real training, certified coaches and teammates, at Miramar, Mater Bay and Downtown Miami.<br><br>Claim your free month and sign up online at the link 👇</div>
+      <div class="lbl">Texto principal · español <span class="hint">· se agrega como segundo idioma del mismo anuncio · se puede editar</span></div>
+      <div class="tp ed" contenteditable="true" spellcheck="true" data-campo="texto_es">Tu primer mes en Juventus es gratis. 🏆<br><br>Prueba el programa completo de Juventus Pre-Academy antes de comprometerte: entrenamientos de verdad, entrenadores certificados y compañeros de equipo, en Miramar, Mater Bay y Downtown Miami.<br><br>Reclama tu mes gratis e inscríbelo en línea en el enlace 👇</div>
+      <div class="lbl">Título <span class="hint">· se puede editar</span></div>
+      <div class="tit ed" contenteditable="true" spellcheck="true" data-campo="titulo">Your first month is free</div>
+      <div class="lbl">Descripción <span class="hint">· se puede editar</span></div>
+      <div class="tit ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Miramar · Mater Bay · Downtown Miami</div>
+      <div class="lbl">Botón de Meta</div><p class="btn">Sign up</p>
+      <div class="acciones">
+        <button type="button" class="aprobar" data-accion="aprobar">Aprobar</button>
+        <button type="button" class="sec" data-accion="nota">Dejar una nota</button>
+        <button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button>
+      </div>
+      <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio (opcional)"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+      <p class="aviso" data-aviso aria-live="polite"></p>
+    </div>
+  </div>
+</article><footer>Juventus Academy Miami · Aprobación de la campaña de Pre-Academy · 29-10-2026 · Página interna, no indexada.</footer>
+</div>
+<script>
+const CFG={"accion": "https://docs.google.com/forms/d/e/1FAIpQLSeGUY8Cv9Ea08X9HkdznY9pzVoUc4Gj-GdymsVTFP86wbE5sw/formResponse", "entry": {"pieza": 333677581, "cuenta": 724853821, "autor": 299801437, "comentario": 1175231019, "copy_corregido": 1649408514, "copy_original": 1637675582, "enviado": 909195940, "tipo": 1605073129, "zona": 1831673234, "fila": 1327618412}, "cuenta": "jam_preacademy_campana"};
+const ORIG={"CONF": {}, "AD5": {"texto": "Still figuring out if he loves the game? Let him try it with Juventus. ⚽\n\nAt Miramar, Mater Bay and Downtown Miami, your first month of Juventus Pre-Academy is free: boys and girls learn soccer the Juventus way, with certified coaches and a real team.\n\nPick your location, see the schedule and sign up online at the link 👇", "texto_es": "¿Todavía no sabes si le encanta el fútbol? Que lo pruebe con Juventus. ⚽\n\nEn Miramar, Mater Bay y Downtown Miami el primer mes de Juventus Pre-Academy es gratis: niños y niñas aprenden fútbol al estilo Juventus, con entrenadores certificados y un equipo de verdad.\n\nElige tu sede, mira el horario e inscríbelo en línea en el enlace 👇", "titulo": "First month free · Juventus Pre-Academy", "descripcion": "Miramar · Mater Bay · Downtown Miami", "nombre": "AD5 · \"First month free\" (niño en acción, skyline)"}, "AD3": {"texto": "Still figuring out if he loves the game? That's exactly who we built Juventus Pre-Academy for. 🦓\n\nNo pressure, no tryouts: boys and girls learn the game at their own pace with certified coaches and the Juventus methodology. First month free at Miramar, Mater Bay and Downtown Miami.\n\nSee the schedule and sign up online at the link 👇", "texto_es": "¿Todavía no sabes si le encanta el fútbol? Justo para eso creamos Juventus Pre-Academy. 🦓\n\nSin presión y sin pruebas: niños y niñas aprenden a su ritmo con entrenadores certificados y la metodología Juventus. Primer mes gratis en Miramar, Mater Bay y Downtown Miami.\n\nMira el horario e inscríbelo en línea en el enlace 👇", "titulo": "Juventus Pre-Academy · Ages 3–16", "descripcion": "First month free at 3 locations", "nombre": "AD3 · \"Still figuring out if he loves the game?\""}, "AD1": {"texto": "More soccer. More smiles. Where the Juventus journey begins. ⚪⚫\n\nJuventus Pre-Academy is for boys and girls ages 3 to 16 in Downtown Miami, Doral, Davie, Miramar and Mater Bay: weekly training with certified coaches, the Juventus methodology and a team to belong to.\n\nChoose your location and sign up online at the link 👇", "texto_es": "Más fútbol. Más sonrisas. Aquí empieza el camino Juventus. ⚪⚫\n\nJuventus Pre-Academy es para niños y niñas de 3 a 16 años en Downtown Miami, Doral, Davie, Miramar y Mater Bay: entrenamientos cada semana con entrenadores certificados, la metodología Juventus y un equipo al que pertenecer.\n\nElige tu sede e inscríbelo en línea en el enlace 👇", "titulo": "Juventus Pre-Academy · 5 locations", "descripcion": "Downtown · Doral · Davie · Miramar · Mater Bay", "nombre": "AD1 · \"More soccer. More smiles.\" (5 sedes)"}, "AD4": {"texto": "Your first month at Juventus is free. 🏆\n\nTry the full Juventus Pre-Academy program before you commit to anything: real training, certified coaches and teammates, at Miramar, Mater Bay and Downtown Miami.\n\nClaim your free month and sign up online at the link 👇", "texto_es": "Tu primer mes en Juventus es gratis. 🏆\n\nPrueba el programa completo de Juventus Pre-Academy antes de comprometerte: entrenamientos de verdad, entrenadores certificados y compañeros de equipo, en Miramar, Mater Bay y Downtown Miami.\n\nReclama tu mes gratis e inscríbelo en línea en el enlace 👇", "titulo": "Your first month is free", "descripcion": "Miramar · Mater Bay · Downtown Miami", "nombre": "AD4 · \"Your first month at Juventus is free\" (trofeo)"}};
+
+const LSK='jam_preacademy_campana';
+const LS={get(){try{return JSON.parse(localStorage.getItem(LSK)||'{}')}catch(e){return {}}},set(v){try{localStorage.setItem(LSK,JSON.stringify(v))}catch(e){}}};
+const norm=t=>(t||'').replace(/\u00a0/g,' ').split('\n').map(l=>l.trim()).join('\n').replace(/\n{3,}/g,'\n\n').trim();
+const campos=ad=>[...ad.querySelectorAll('[data-campo]')].map(e=>e.dataset.campo);
+function leer(ad){const v={};campos(ad).forEach(c=>v[c]=norm(ad.querySelector('[data-campo="'+c+'"]').innerText));return v}
+function cambiado(ad){const o=ORIG[ad.dataset.id],v=leer(ad);return campos(ad).some(c=>v[c]!==norm(o[c]))}
+function pintar(ad){const b=ad.querySelector('.aprobar');if(!campos(ad).length)return;const c=cambiado(ad);b.textContent=c?'Aprobar con texto corregido':'Aprobar';b.classList.toggle('copy',c);
+  ad.querySelector('.deshacer').hidden=!c;ad.querySelectorAll('.ed').forEach(e=>e.classList.toggle('cambiado',norm(e.innerText)!==norm(ORIG[ad.dataset.id][e.dataset.campo])))}
+async function enviar(reg){const f=new URLSearchParams();for(const k in CFG.entry)f.append('entry.'+CFG.entry[k],reg[k]??'');
+  try{await fetch(CFG.accion,{method:'POST',mode:'no-cors',body:f});return true}catch(e){return false}}
+function marcar(ad,txt){ad.classList.add('aprobado');ad.querySelector('[data-estado]').textContent=txt}
+async function aprobar(ad){const id=ad.dataset.id,c=cambiado(ad),v=leer(ad),o=ORIG[id];
+  const reg={pieza:id,cuenta:CFG.cuenta,autor:'Alessandro',tipo:c?'aprobado_copy':'aprobado',comentario:'',copy_original:JSON.stringify({texto:o.texto||'',titulo:o.titulo||'',descripcion:o.descripcion||''}),
+    copy_corregido:c?JSON.stringify(v):'',enviado:new Date().toISOString(),zona:'',fila:''};
+  const av=ad.querySelector('[data-aviso]');av.textContent='Guardando…';
+  if(!await enviar(reg)){av.textContent='No se pudo guardar. Revise la conexión e intente de nuevo.';return}
+  const st=LS.get();st[id]={tipo:reg.tipo,v:c?v:null,hora:reg.enviado};LS.set(st);
+  marcar(ad,c?'Aprobado con texto corregido':'Aprobado');av.textContent='Guardado.';contar()}
+async function nota(ad){const ta=ad.querySelector('.nota textarea'),t=ta.value.trim();if(!t)return;const av=ad.querySelector('[data-aviso]');av.textContent='Enviando…';
+  const ok=await enviar({pieza:ad.dataset.id,cuenta:CFG.cuenta,autor:'Alessandro',tipo:'comentario',comentario:t,copy_original:'',copy_corregido:cambiado(ad)?JSON.stringify(leer(ad)):'',enviado:new Date().toISOString(),zona:'',fila:''});
+  av.textContent=ok?'Nota enviada.':'No se pudo enviar la nota.';if(ok){ta.value='';ad.querySelector('.nota').hidden=true}}
+function contar(){const n=document.querySelectorAll('.ad').length,ap=document.querySelectorAll('.ad.aprobado').length;
+  document.querySelector('.todo .cuenta').textContent=ap+' de '+n+' aprobados (campaña y 4 anuncios)';document.querySelector('.todo button').hidden=ap===n}
+document.querySelectorAll('.ad').forEach(ad=>{ad.querySelectorAll('.ed').forEach(e=>e.addEventListener('input',()=>pintar(ad)));
+  ad.addEventListener('click',ev=>{const a=ev.target.closest('[data-accion]');if(!a)return;const k=a.dataset.accion;
+    if(k==='aprobar')aprobar(ad);
+    else if(k==='nota'){const n=ad.querySelector('.nota');n.hidden=!n.hidden;if(!n.hidden)n.querySelector('textarea').focus()}
+    else if(k==='enviar-nota')nota(ad);
+    else if(k==='restaurar'){const o=ORIG[ad.dataset.id];campos(ad).forEach(c=>ad.querySelector('[data-campo="'+c+'"]').innerText=o[c]);pintar(ad)}})});
+document.querySelector('.todo button').addEventListener('click',async()=>{for(const ad of document.querySelectorAll('.ad:not(.aprobado)'))await aprobar(ad)});
+function aplicar(st){for(const id in st){const ad=document.querySelector('.ad[data-id="'+id+'"]');if(!ad)continue;const x=st[id];
+  if(x.v){campos(ad).forEach(c=>{if(x.v[c]!=null)ad.querySelector('[data-campo="'+c+'"]').innerText=x.v[c]});pintar(ad)}
+  if(x.tipo&&x.tipo.indexOf('aprobado')===0)marcar(ad,x.tipo==='aprobado_copy'?'Aprobado con texto corregido':'Aprobado')}contar()}
+aplicar(LS.get());
+fetch('estado.json?t='+Date.now()).then(r=>r.ok?r.json():{}).then(j=>{if(j&&typeof j==='object')aplicar(j)}).catch(()=>{});
+(function(){var lb=document.createElement('div');lb.id='lb';lb.hidden=true;lb.innerHTML='<button class="x" type="button" aria-label="Cerrar">×</button><img alt=""><div class="ay">Clic en la imagen: tamaño real · Esc o × para cerrar</div>';document.body.appendChild(lb);
+var im=lb.querySelector('img');function cerrar(){lb.hidden=true;lb.classList.remove('real');document.body.classList.remove('lb-abierto');im.removeAttribute('src')}
+document.addEventListener('click',function(e){var t=e.target.closest('img.zoom');if(!t)return;e.preventDefault();im.src=t.dataset.full||t.src;im.alt=t.alt;lb.classList.remove('real');lb.hidden=false;document.body.classList.add('lb-abierto');lb.scrollTo(0,0)});
+im.addEventListener('click',function(e){e.stopPropagation();lb.classList.toggle('real');if(lb.classList.contains('real')){var r=im.getBoundingClientRect();lb.scrollTo((im.scrollWidth-innerWidth)/2,0)}});
+lb.addEventListener('click',function(e){if(e.target===lb||e.target.classList.contains('x'))cerrar()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!lb.hidden)cerrar()})})();
+</script></body></html>
